@@ -1,6 +1,9 @@
 import React from 'react'
 
 const NewActivity = () => {
+
+  console.log(test)
+
   return (
 
     <form>
