@@ -2,8 +2,6 @@ import React from 'react'
 
 const TableHeaders = (props) => {
 
-    console.log(props)
-
   return (
     <>
     {/* {props.headingData && 

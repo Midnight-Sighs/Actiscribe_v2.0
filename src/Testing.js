@@ -9,6 +9,7 @@ import TableRows from './Components/Legos/Table/TableRows';
 
 import Activities from './API/ActivitiesApi'
 import { setAll } from './Redux/Slices/activitySlice'
+import NewActivity from './Components/ActivityCrud/NewActivity';
 
 export const Testing = () => {
 
@@ -24,8 +25,8 @@ export const Testing = () => {
         <Login />
         <table>
 
-          <TableHeaders headingData={headers} />
           <tbody>
+          <TableHeaders headingData={headers} />
             {activity.map((activity)=>(
               <TableRows key={`activity-table-row-${activity.id}`}rowData={[activity.id, activity.name,activity.description, activity.dow_one, activity.dow_two, activity.dow_three ]} />
               ))}
@@ -33,6 +34,7 @@ export const Testing = () => {
           </tbody>
         </table>
 
+        <NewActivity />
 
       </>
   )
