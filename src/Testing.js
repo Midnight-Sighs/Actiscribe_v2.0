@@ -18,7 +18,7 @@ export const Testing = () => {
     let details = UserDetails();
     
     const [ filteredActivities, setFilteredActivities ]=useState([])
-    const headers= ["id", "name", "description", "dow-1","dow-2","dow-3"]
+    const headers= ["id", "name", "description", "DOW 1","DOW 2","DOW 3", "Edit"]
     
     useEffect(()=>{
       if(details) console.log(details)
@@ -27,16 +27,20 @@ export const Testing = () => {
     useEffect(()=>{
       if(activity && activity.length >0) {
         // let temp = CustomFilter.filterSingle(activity, "dow_one", "Physical")
-        let temp = CustomFilter.filterDOWs(activity, "Physical")
+        // let temp = CustomFilter.filterDOWs(activity, "Physical")
+        let temp = CustomFilter.filterByTerm("Activity", activity, "Tai")
         setFilteredActivities(temp)
       }
     },[activity])
+
+
 
   
   return (
       <>
         <Login />
-        <table>
+        {activity &&
+          <table>
 
           <tbody>
           <TableHeaders headingData={headers} />
@@ -46,6 +50,7 @@ export const Testing = () => {
 
           </tbody>
         </table>
+        }
 
         <NewActivity />
 

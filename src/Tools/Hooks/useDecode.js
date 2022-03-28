@@ -22,7 +22,7 @@ const useDecode = () => {
     
     if(user){
         return user.user_id
-    }
+    } else return null
 }
 
 export default useDecode

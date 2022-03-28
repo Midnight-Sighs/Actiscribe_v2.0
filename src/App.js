@@ -1,5 +1,6 @@
-import './App.css';
 
+import Router from './Utilities/Routes/Router';
+import './App.css';
 import Testing from './Testing'
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
 
-    <Testing />
+    <Router />
 
 
     </>

@@ -5,15 +5,17 @@ const jwt = localStorage.getItem('token')
 const headers = {headers: {Authorization: 'Bearer '+ jwt}}
 
 const login=async(props)=>{
+  let response
     try{
-        let response = await axios.post(base+'login/', props);
+        response = await axios.post(base+'login/', props);
         if(response.data){
-          localStorage.setItem('token', response.data.access)
+          localStorage.setItem('token', response.data.access);
         }
       }
       catch(ex){
-        console.log("Error Logging In", ex)
+        console.log("Error Logging In---", ex)
       }
+      return response
 }
 
 const getUserDetails=async(props)=>{

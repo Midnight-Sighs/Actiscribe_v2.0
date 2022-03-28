@@ -2,8 +2,8 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import { useDispatch } from 'react-redux'
 
 import Users from '../../API/UsersApi'
-import useActivities from '../../Components/Hooks/useActivities'
-import useDecode from '../../Components/Hooks/useDecode'
+import useActivities from '../Hooks/useActivities'
+import useDecode from '../Hooks/useDecode'
 import { setDetails, setId } from '../../Redux/Slices/userSlice'
 
 /**Sets user details to Redux and calls 'useActivities' to get userActivities */
