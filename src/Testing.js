@@ -39,7 +39,7 @@ export const Testing = () => {
   return (
       <>
         <Login />
-        {activity &&
+        {activity.length>0 &&
           <table>
 
           <tbody>

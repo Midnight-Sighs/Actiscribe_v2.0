@@ -2,6 +2,7 @@ import React, { useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 
 import Users from '../../../API/UsersApi'
+import UserDetails from '../../../Tools/Users/UserDetails';
 
 export const Login = () => {
     const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const Login = () => {
         }
         try{
             let response = await Users.login(login);
-            if(response.status === 200) navigate("/activity")
+            if(response.status === 200) navigate("/test")
         }
         catch(ex){
             console.log(ex)
