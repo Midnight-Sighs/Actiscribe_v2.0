@@ -18,7 +18,7 @@ const useActivities = () => {
     const getActivities=async()=>{
         try{
           let activities = await Activities.get()
-          dispatch(setAll(activities));
+          dispatch(setAll(activities.data));
         }catch(ex){
           console.log(ex)
         }

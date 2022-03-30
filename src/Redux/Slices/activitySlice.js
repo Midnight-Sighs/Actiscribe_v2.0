@@ -17,7 +17,7 @@ const activitySlice = createSlice({
             state.archivedActivities = action.payload
         },
         addActivity: (state, action)=>{
-            state.allActivities = [...state.allActivities, ...action.payload]
+            state.allActivities = [...state.allActivities, action.payload]
         }
     }
 });
