@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef} from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 
+import { Navbar } from './Components/Legos/Navbar/Navbar';
+
 import Login from './Components/User/Login'
 import UserDetails from './Tools/Users/UserDetails';
 
@@ -20,7 +22,8 @@ export const Testing = () => {
 
   
   return (
-      <>
+      <> 
+        <Navbar/>
         <Login />
         <table>
 
