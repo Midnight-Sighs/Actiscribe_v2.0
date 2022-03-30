@@ -3,12 +3,11 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 8rem;
-  background-color: goldenrod;
 }
 
 .navbar-cont {
   min-width: 100%;
+  height: 8rem;
   background-color: teal;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,8 +16,51 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+}
+
+.nav-logo-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3rem;
+}
+
+.nav-links-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 8rem;
+}
+
+.text-links {
+  font-size: 2rem;
+  padding: 1rem;
+  border-style: solid;
+  border-bottom: none;
+  border-left: none;
+  border-radius: 15%;
+  border-color: black;
+  text-decoration: none;
+  color: black;
+}
+
+.text-links:hover {
+  background-color: cadetblue;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=Navbar.css.map */
