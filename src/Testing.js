@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef} from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 
 import { Navbar } from './Components/Legos/Navbar/Navbar';
+import { SideNavbar } from './Components/Legos/SideNavbar/SideNavbar';
 
 import Login from './Components/User/Login'
 import UserDetails from './Tools/Users/UserDetails';
@@ -13,6 +14,7 @@ import CustomFilter from './Tools/CustomFilter'
 import Activities from './API/ActivitiesApi'
 import { setAll } from './Redux/Slices/activitySlice'
 import NewActivity from './Components/ActivityCrud/NewActivity';
+
 
 export const Testing = () => {
 
@@ -41,6 +43,7 @@ export const Testing = () => {
   return (
       <> 
         <Navbar/>
+        <SideNavbar/>
         <Login />
         {activity.length>0 &&
           <table>

@@ -1,0 +1,31 @@
+.side-navbar-wrapper{
+    display: flex;
+    float: left; 
+    width: 20rem;
+    height: 50rem;
+    position: sticky;
+    align-items: center;
+    background-color: darkcyan;
+}
+
+.side-navbar-con{
+    width: 100%;
+}
+
+.side-navbar-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-nav-links{
+    margin: 2rem;
+    font-size: 2rem;
+    padding: 1rem;
+    border-style: solid;
+    border-radius: 15%;
+    border-color: black;
+    text-decoration: none;
+    color: black;
+}
