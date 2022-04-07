@@ -8,7 +8,7 @@ I decided to redo my capstone for a number of reasons.
     - My logic is more concise and less repetative
 * I want to use it to learn 
     - Redux Toolkit
-    - Jest
+    - Unit Testing
     - Breaking down my components even more than I do
     - Custom Hooks
 * I want to make it mobile responsive with Flex
